@@ -1,0 +1,84 @@
+---
+title: "Service use for psychiatric and neurodevelopmental disorders among children and
+adolescents before and during the COVID-19-pandemic"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Introduction
+This document shows how to perform the analyses and vizualize the results as described in the manuscript 'Service use for psychiatric and neurodevelopmental disorders among children and adolescents before and during the COVID-19-pandemic'.  
+
+## Reproducing analyses
+
+Clone the repository from <https://github.com/davgyl/covid_psyserv.git>.  
+
+## Prepare the denominator
+
+The program to edit the data containing the number at risk is found in `code/01_prep_denominator.R`.  
+
+## Time series data
+
+The time series data used for running the analyses is found in `data/ts_aggregated.rds` and it has the following structure. 
+
+```{r chunk_01}
+
+source("code//00_pkgs_utils.R")
+
+ts_m <- read_rds("data/ts_aggregated.rds")
+ts_m %>% glimpse()
+
+```
+
+The variables `ts` and `lab_ts` clusters the time series to  
+- One time serie of any diagnosis without stratification (`01_any`)  
+- Two time series of any diagnosis stratified by sex (`02_sex`)  
+- Two time series of any diagnosis stratified by age group (`03_age`)  
+- Two time series of any diagnosis stratified by geomgraphic area (`04_area`)  
+- Seven time series of diagnostic groups as outcomes (`04_area`)  
+
+```{r chunk_02}
+
+ts_m %>% select(ts, lab_ts) %>% unique()
+
+```
+
+## Modelling and visualization
+
+The program for modelling data is found in `code/02_model_functions.R`.  
+To model the associations, run `code/03_model_all_ts.R`.  
+To edit tables, run `code/04_viz_table1_descr.R` and `code/05_viz_table2.R`.  
+To visualize the associations as figures, run `code/06_viz_fig_aim1.R` for Figure 1 and `code/07_viz_fig_aim2.R` for Figure 2.  
+
+## Versions
+
+R version: `r getRversion()`. Version of packages are shown in the table below. 
+
+```{r chunk_03, echo=FALSE}
+
+packages <- 
+  list(
+    "MASS",
+    "tidyverse", 
+    "stringr", 
+    "openxlsx", 
+    "knitr", 
+    "lubridate",
+    "codebook",
+    "haven",
+    "broom"
+  )
+
+tab_pkg_vs <- matrix(NA, nrow = length(packages), ncol = 2)
+
+for(i in 1:length(packages)) {
+  tab_pkg_vs[i, 1] <- packages[[i]]
+  tab_pkg_vs[i, 2] <- packageVersion(packages[[i]]) %>% paste()
+}
+
+kable(tab_pkg_vs, col.names = c("Package", "Version"))
+
+```

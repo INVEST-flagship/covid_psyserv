@@ -1,0 +1,165 @@
+"11lj -- Preliminary population structure by area, 2021M01*-2021M10*"
+
+"Month","Area","Age","Population Total","Population Males","Population Females"
+"2021M09*","WHOLE COUNTRY","0",48953,24894,24059
+"2021M09*","WHOLE COUNTRY","1",46748,23894,22854
+"2021M09*","WHOLE COUNTRY","2",46553,23812,22741
+"2021M09*","WHOLE COUNTRY","3",49531,25416,24115
+"2021M09*","WHOLE COUNTRY","4",52081,26760,25321
+"2021M09*","WHOLE COUNTRY","5",55680,28183,27497
+"2021M09*","WHOLE COUNTRY","6",57575,29551,28024
+"2021M09*","WHOLE COUNTRY","7",59811,30554,29257
+"2021M09*","WHOLE COUNTRY","8",60850,31212,29638
+"2021M09*","WHOLE COUNTRY","9",62363,31881,30482
+"2021M09*","WHOLE COUNTRY","10",63056,32224,30832
+"2021M09*","WHOLE COUNTRY","11",63567,32444,31123
+"2021M09*","WHOLE COUNTRY","12",62959,32119,30840
+"2021M09*","WHOLE COUNTRY","13",62516,31983,30533
+"2021M09*","WHOLE COUNTRY","14",61956,31732,30224
+"2021M09*","WHOLE COUNTRY","15",61817,31599,30218
+"2021M09*","WHOLE COUNTRY","16",60678,30944,29734
+"2021M09*","WHOLE COUNTRY","17",60684,31056,29628
+"2021M09*","MA1 MAINLAND FINLAND","0",48670,24763,23907
+"2021M09*","MA1 MAINLAND FINLAND","1",46468,23751,22717
+"2021M09*","MA1 MAINLAND FINLAND","2",46263,23664,22599
+"2021M09*","MA1 MAINLAND FINLAND","3",49221,25259,23962
+"2021M09*","MA1 MAINLAND FINLAND","4",51767,26591,25176
+"2021M09*","MA1 MAINLAND FINLAND","5",55330,28009,27321
+"2021M09*","MA1 MAINLAND FINLAND","6",57229,29372,27857
+"2021M09*","MA1 MAINLAND FINLAND","7",59464,30371,29093
+"2021M09*","MA1 MAINLAND FINLAND","8",60494,31036,29458
+"2021M09*","MA1 MAINLAND FINLAND","9",62002,31697,30305
+"2021M09*","MA1 MAINLAND FINLAND","10",62711,32058,30653
+"2021M09*","MA1 MAINLAND FINLAND","11",63212,32268,30944
+"2021M09*","MA1 MAINLAND FINLAND","12",62619,31934,30685
+"2021M09*","MA1 MAINLAND FINLAND","13",62151,31797,30354
+"2021M09*","MA1 MAINLAND FINLAND","14",61589,31542,30047
+"2021M09*","MA1 MAINLAND FINLAND","15",61479,31421,30058
+"2021M09*","MA1 MAINLAND FINLAND","16",60355,30779,29576
+"2021M09*","MA1 MAINLAND FINLAND","17",60345,30877,29468
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","0",20741,10511,10230
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","1",19578,10037,9541
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","2",19448,9977,9471
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","3",20486,10446,10040
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","4",21203,10932,10271
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","5",22585,11538,11047
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","6",23112,11943,11169
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","7",23756,12111,11645
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","8",24104,12380,11724
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","9",24656,12595,12061
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","10",24624,12775,11849
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","11",25094,12760,12334
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","12",24649,12604,12045
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","13",24614,12580,12034
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","14",24151,12294,11857
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","15",24210,12397,11813
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","16",23504,11953,11551
+"2021M09*","ER1 Helsinki University Hospital specific catchment area","17",23773,12071,11702
+"2021M09*","ER3 Turku University Hospital specific catchment area","0",7429,3748,3681
+"2021M09*","ER3 Turku University Hospital specific catchment area","1",7121,3687,3434
+"2021M09*","ER3 Turku University Hospital specific catchment area","2",7019,3611,3408
+"2021M09*","ER3 Turku University Hospital specific catchment area","3",7485,3867,3618
+"2021M09*","ER3 Turku University Hospital specific catchment area","4",8030,4130,3900
+"2021M09*","ER3 Turku University Hospital specific catchment area","5",8445,4170,4275
+"2021M09*","ER3 Turku University Hospital specific catchment area","6",8751,4536,4215
+"2021M09*","ER3 Turku University Hospital specific catchment area","7",9208,4727,4481
+"2021M09*","ER3 Turku University Hospital specific catchment area","8",9038,4581,4457
+"2021M09*","ER3 Turku University Hospital specific catchment area","9",9212,4714,4498
+"2021M09*","ER3 Turku University Hospital specific catchment area","10",9643,4970,4673
+"2021M09*","ER3 Turku University Hospital specific catchment area","11",9619,4882,4737
+"2021M09*","ER3 Turku University Hospital specific catchment area","12",9507,4870,4637
+"2021M09*","ER3 Turku University Hospital specific catchment area","13",9433,4833,4600
+"2021M09*","ER3 Turku University Hospital specific catchment area","14",9319,4728,4591
+"2021M09*","ER3 Turku University Hospital specific catchment area","15",9334,4801,4533
+"2021M09*","ER3 Turku University Hospital specific catchment area","16",9170,4698,4472
+"2021M09*","ER3 Turku University Hospital specific catchment area","17",9180,4785,4395
+"2021M09*","ER3 Tampere University Hospital specific catchment area","0",7643,3935,3708
+"2021M09*","ER3 Tampere University Hospital specific catchment area","1",7216,3699,3517
+"2021M09*","ER3 Tampere University Hospital specific catchment area","2",7384,3793,3591
+"2021M09*","ER3 Tampere University Hospital specific catchment area","3",7802,3992,3810
+"2021M09*","ER3 Tampere University Hospital specific catchment area","4",8256,4246,4010
+"2021M09*","ER3 Tampere University Hospital specific catchment area","5",8966,4564,4402
+"2021M09*","ER3 Tampere University Hospital specific catchment area","6",9410,4822,4588
+"2021M09*","ER3 Tampere University Hospital specific catchment area","7",9490,4929,4561
+"2021M09*","ER3 Tampere University Hospital specific catchment area","8",10066,5248,4818
+"2021M09*","ER3 Tampere University Hospital specific catchment area","9",10315,5259,5056
+"2021M09*","ER3 Tampere University Hospital specific catchment area","10",10290,5161,5129
+"2021M09*","ER3 Tampere University Hospital specific catchment area","11",10402,5328,5074
+"2021M09*","ER3 Tampere University Hospital specific catchment area","12",10369,5242,5127
+"2021M09*","ER3 Tampere University Hospital specific catchment area","13",10345,5271,5074
+"2021M09*","ER3 Tampere University Hospital specific catchment area","14",10268,5381,4887
+"2021M09*","ER3 Tampere University Hospital specific catchment area","15",10196,5139,5057
+"2021M09*","ER3 Tampere University Hospital specific catchment area","16",10134,5129,5005
+"2021M09*","ER3 Tampere University Hospital specific catchment area","17",10043,5138,4905
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","0",6030,3148,2882
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","1",5863,2923,2940
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","2",5884,2990,2894
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","3",6313,3312,3001
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","4",6745,3442,3303
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","5",7357,3688,3669
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","6",7594,3807,3787
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","7",8074,4021,4053
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","8",8151,4168,3983
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","9",8288,4205,4083
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","10",8591,4349,4242
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","11",8482,4367,4115
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","12",8474,4348,4126
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","13",8342,4247,4095
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","14",8366,4335,4031
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","15",8565,4402,4163
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","16",8361,4271,4090
+"2021M09*","ER4 Kuopio University Hospital specific catchment area","17",8425,4291,4134
+"2021M09*","ER5 Oulu University Hospital specific catchment area","0",6827,3421,3406
+"2021M09*","ER5 Oulu University Hospital specific catchment area","1",6690,3405,3285
+"2021M09*","ER5 Oulu University Hospital specific catchment area","2",6528,3293,3235
+"2021M09*","ER5 Oulu University Hospital specific catchment area","3",7135,3642,3493
+"2021M09*","ER5 Oulu University Hospital specific catchment area","4",7533,3841,3692
+"2021M09*","ER5 Oulu University Hospital specific catchment area","5",7977,4049,3928
+"2021M09*","ER5 Oulu University Hospital specific catchment area","6",8362,4264,4098
+"2021M09*","ER5 Oulu University Hospital specific catchment area","7",8936,4583,4353
+"2021M09*","ER5 Oulu University Hospital specific catchment area","8",9135,4659,4476
+"2021M09*","ER5 Oulu University Hospital specific catchment area","9",9531,4924,4607
+"2021M09*","ER5 Oulu University Hospital specific catchment area","10",9563,4803,4760
+"2021M09*","ER5 Oulu University Hospital specific catchment area","11",9615,4931,4684
+"2021M09*","ER5 Oulu University Hospital specific catchment area","12",9620,4870,4750
+"2021M09*","ER5 Oulu University Hospital specific catchment area","13",9417,4866,4551
+"2021M09*","ER5 Oulu University Hospital specific catchment area","14",9485,4804,4681
+"2021M09*","ER5 Oulu University Hospital specific catchment area","15",9174,4682,4492
+"2021M09*","ER5 Oulu University Hospital specific catchment area","16",9186,4728,4458
+"2021M09*","ER5 Oulu University Hospital specific catchment area","17",8924,4592,4332
+"2021M09*","MA2 ÅLAND","0",283,131,152
+"2021M09*","MA2 ÅLAND","1",280,143,137
+"2021M09*","MA2 ÅLAND","2",290,148,142
+"2021M09*","MA2 ÅLAND","3",310,157,153
+"2021M09*","MA2 ÅLAND","4",314,169,145
+"2021M09*","MA2 ÅLAND","5",350,174,176
+"2021M09*","MA2 ÅLAND","6",346,179,167
+"2021M09*","MA2 ÅLAND","7",347,183,164
+"2021M09*","MA2 ÅLAND","8",356,176,180
+"2021M09*","MA2 ÅLAND","9",361,184,177
+"2021M09*","MA2 ÅLAND","10",345,166,179
+"2021M09*","MA2 ÅLAND","11",355,176,179
+"2021M09*","MA2 ÅLAND","12",340,185,155
+"2021M09*","MA2 ÅLAND","13",365,186,179
+"2021M09*","MA2 ÅLAND","14",367,190,177
+"2021M09*","MA2 ÅLAND","15",338,178,160
+"2021M09*","MA2 ÅLAND","16",323,165,158
+"2021M09*","MA2 ÅLAND","17",339,179,160
+"2021M09*","ER6 Åland","0",283,131,152
+"2021M09*","ER6 Åland","1",280,143,137
+"2021M09*","ER6 Åland","2",290,148,142
+"2021M09*","ER6 Åland","3",310,157,153
+"2021M09*","ER6 Åland","4",314,169,145
+"2021M09*","ER6 Åland","5",350,174,176
+"2021M09*","ER6 Åland","6",346,179,167
+"2021M09*","ER6 Åland","7",347,183,164
+"2021M09*","ER6 Åland","8",356,176,180
+"2021M09*","ER6 Åland","9",361,184,177
+"2021M09*","ER6 Åland","10",345,166,179
+"2021M09*","ER6 Åland","11",355,176,179
+"2021M09*","ER6 Åland","12",340,185,155
+"2021M09*","ER6 Åland","13",365,186,179
+"2021M09*","ER6 Åland","14",367,190,177
+"2021M09*","ER6 Åland","15",338,178,160
+"2021M09*","ER6 Åland","16",323,165,158
+"2021M09*","ER6 Åland","17",339,179,160

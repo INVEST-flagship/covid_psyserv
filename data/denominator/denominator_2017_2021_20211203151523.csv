@@ -1,0 +1,145 @@
+area,HOSPITAL_AREA,YEAR,AGEGROUP,n_at_risk,SEX
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2016,0-12,148291,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2016,13-17,55000,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2016,0-12,155778,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2016,13-17,57246,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2017,0-12,148013,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2017,13-17,55525,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2017,0-12,155549,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2017,13-17,57760,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2018,0-12,147123,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2018,13-17,56197,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2018,0-12,154654,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2018,13-17,58167,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2019,0-12,145786,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2019,13-17,57139,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2019,0-12,153110,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2019,13-17,59197,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2020,0-12,144268,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2020,13-17,58248,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2020,0-12,151632,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2020,13-17,60354,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2021,0-12,143427,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2021,13-17,58957,2
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2021,0-12,150609,1
+ER1 Helsinki University Hospital specific catchment area,Helsingin yliopistollisen keskussairaalan erityisvastuualue,2021,13-17,61295,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2016,0-12,62606,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2016,13-17,23667,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2016,0-12,65307,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2016,13-17,24799,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2017,0-12,61767,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2017,13-17,23806,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2017,0-12,64492,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2017,13-17,24915,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2018,0-12,60526,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2018,13-17,24015,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2018,0-12,63623,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2018,13-17,24974,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2019,0-12,59352,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2019,13-17,24330,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2019,0-12,62386,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2019,13-17,25196,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2020,0-12,58195,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2020,13-17,24592,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2020,0-12,60952,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2020,13-17,25696,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2021,0-12,57391,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2021,13-17,24928,2
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2021,0-12,60218,1
+ER3 Tampere University Hospital specific catchment area,Tampereen yliopistollisen sairaalan erityisvastuualue,2021,13-17,26058,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2016,0-12,57621,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2016,13-17,22090,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2016,0-12,60191,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2016,13-17,23633,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2017,0-12,57240,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2017,13-17,21929,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2017,0-12,59560,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2017,13-17,23551,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2018,0-12,56478,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2018,13-17,21922,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2018,0-12,58892,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2018,13-17,23408,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2019,0-12,55302,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2019,13-17,22224,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2019,0-12,57938,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2019,13-17,23593,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2020,0-12,54416,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2020,13-17,22456,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2020,0-12,57125,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2020,13-17,23677,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2021,0-12,54014,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2021,13-17,22591,2
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2021,0-12,56493,1
+ER3 Turku University Hospital specific catchment area,Turun yliopistollisen sairaalan erityisvastuualue,2021,13-17,23845,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2016,0-12,51941,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2016,13-17,20666,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2016,0-12,53926,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2016,13-17,21690,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2017,0-12,51110,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2017,13-17,20440,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2017,0-12,53077,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2017,13-17,21477,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2018,0-12,50036,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2018,13-17,20353,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2018,0-12,52116,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2018,13-17,21351,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2019,0-12,48805,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2019,13-17,20408,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2019,0-12,50651,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2019,13-17,21383,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2020,0-12,47752,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2020,13-17,20539,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2020,0-12,49457,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2020,13-17,21536,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2021,0-12,47078,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2021,13-17,20513,2
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2021,0-12,48768,1
+ER4 Kuopio University Hospital specific catchment area,Kuopion yliopistollisen sairaalan erityisvastuualue,2021,13-17,21546,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2016,0-12,57548,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2016,13-17,21217,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2016,0-12,60126,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2016,13-17,22827,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2017,0-12,56957,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2017,13-17,21283,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2017,0-12,59285,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2017,13-17,22757,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2018,0-12,55795,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2018,13-17,21628,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2018,0-12,58157,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2018,13-17,22774,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2019,0-12,54617,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2019,13-17,21829,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2019,0-12,56724,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2019,13-17,23177,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2020,0-12,53515,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2020,13-17,22227,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2020,0-12,55553,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2020,13-17,23381,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2021,0-12,52767,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2021,13-17,22514,2
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2021,0-12,54685,1
+ER5 Oulu University Hospital specific catchment area,Oulun yliopistollisen sairaalan erityisvastuualue,2021,13-17,23672,1
+ER6 Åland,Ahvenanmaa,2016,0-12,2037,2
+ER6 Åland,Ahvenanmaa,2016,13-17,739,2
+ER6 Åland,Ahvenanmaa,2016,0-12,2119,1
+ER6 Åland,Ahvenanmaa,2016,13-17,840,1
+ER6 Åland,Ahvenanmaa,2017,0-12,2047,2
+ER6 Åland,Ahvenanmaa,2017,13-17,743,2
+ER6 Åland,Ahvenanmaa,2017,0-12,2144,1
+ER6 Åland,Ahvenanmaa,2017,13-17,834,1
+ER6 Åland,Ahvenanmaa,2018,0-12,2082,2
+ER6 Åland,Ahvenanmaa,2018,13-17,782,2
+ER6 Åland,Ahvenanmaa,2018,0-12,2209,1
+ER6 Åland,Ahvenanmaa,2018,13-17,829,1
+ER6 Åland,Ahvenanmaa,2019,0-12,2076,2
+ER6 Åland,Ahvenanmaa,2019,13-17,798,2
+ER6 Åland,Ahvenanmaa,2019,0-12,2187,1
+ER6 Åland,Ahvenanmaa,2019,13-17,849,1
+ER6 Åland,Ahvenanmaa,2020,0-12,2091,2
+ER6 Åland,Ahvenanmaa,2020,13-17,815,2
+ER6 Åland,Ahvenanmaa,2020,0-12,2175,1
+ER6 Åland,Ahvenanmaa,2020,13-17,874,1
+ER6 Åland,Ahvenanmaa,2021,0-12,2106,2
+ER6 Åland,Ahvenanmaa,2021,13-17,834,2
+ER6 Åland,Ahvenanmaa,2021,0-12,2171,1
+ER6 Åland,Ahvenanmaa,2021,13-17,898,1
