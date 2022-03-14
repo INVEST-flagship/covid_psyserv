@@ -50,20 +50,19 @@ The variables `ts` and `lab_ts` clusters the time series to
 \- Two time series of any diagnosis stratified by age group (`03_age`)  
 \- Two time series of any diagnosis stratified by geomgraphic area
 (`04_area`)  
-\- Seven time series of diagnostic groups (`04_area`)
+\- Seven time series of diagnostic groups as outcomes (`04_area`)
 
 ``` r
-ts_m %>% select(ts, lab_ts) %>% unique()
+ts_m %>% select(ts, lab_ts) %>% unique() %>% kable()
 ```
 
-    ## # A tibble: 5 × 2
-    ##   ts      lab_ts                    
-    ##   <chr>   <chr>                     
-    ## 1 01_any  Any diagnosis             
-    ## 2 02_sex  Any diagnosis by sex      
-    ## 3 03_age  Any diagnosis by age group
-    ## 4 04_area Any diagnosis by area     
-    ## 5 05_out  Diagnostic groups
+| ts       | lab\_ts                    |
+| :------- | :------------------------- |
+| 01\_any  | Any diagnosis              |
+| 02\_sex  | Any diagnosis by sex       |
+| 03\_age  | Any diagnosis by age group |
+| 04\_area | Any diagnosis by area      |
+| 05\_out  | Diagnostic groups          |
 
 ## Modelling and visualization
 

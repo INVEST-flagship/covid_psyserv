@@ -42,7 +42,7 @@ The variables `ts` and `lab_ts` clusters the time series to
 
 ```{r chunk_02}
 
-ts_m %>% select(ts, lab_ts) %>% unique()
+ts_m %>% select(ts, lab_ts) %>% unique() %>% kable()
 
 ```
 
