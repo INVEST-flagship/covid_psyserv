@@ -1,13 +1,13 @@
-Population-based comparisons of new diagnoses for paediatric psychiatric
-and neurodevelopmental disorders before and during the COVID-19 pandemic
+Population-based comparisons of new psychiatric diagnoses among children
+and adolescents before and during the COVID-19 pandemic
 ================
 
 ## Introduction
 
 This document shows how to perform the analyses and vizualize the
 results as described in the manuscript ‘Population-based comparisons of
-new diagnoses for paediatric psychiatric and neurodevelopmental
-disorders before and during the COVID-19 pandemic’.
+new psychiatric diagnoses among children and adolescents before and
+during the COVID-19 pandemic’.
 
 ## Reproducing analyses
 
