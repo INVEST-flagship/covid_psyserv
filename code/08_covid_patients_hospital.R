@@ -24,11 +24,11 @@ list.files("data/", "covid")
 cfin <- read_csv2("data/covid_patients_in_hospitals_finland.csv")
 chuh <- read_csv2("data/covid_patients_in_hospitals_helsinki_uni_area.csv")
 
-cfin %>% count(Measure)
-chuh %>% count(Measure)
+# cfin %>% count(Measure)
+# chuh %>% count(Measure)
 
-cfin %>% summary()
-chuh %>% summary()
+# cfin %>% summary()
+# chuh %>% summary()
 
 # cfin %>% View()
 # chuh %>% View()
@@ -36,7 +36,7 @@ chuh %>% summary()
 df <- 
   bind_rows(
     cfin %>% mutate(area = "fin"), 
-    chua %>% mutate(area = "huh")
+    chuh %>% mutate(area = "huh")
   ) %>% 
   filter(Measure %in% 
            c(
@@ -62,9 +62,9 @@ df <-
   select(Time, rate1000_huh, rate1000_rest) %>% 
   pivot_longer(-Time)
 
-df %>% 
-  filter(Time < "2021-10-01") %>% 
-  summary()
+# df %>% 
+#   filter(Time < "2021-10-01") %>% 
+#   summary()
 
 # df %>%filter(Time < "2021-10-01") %>% View()
 
@@ -86,11 +86,12 @@ plot_s <-
   ) +
   
   labs(
-    title = "Weekly rate of COVID-19 patients treated in hospitals",
-    subtitle = "Source: Finnish Institute for Health and Welfare",
-    caption = "Data management: https://github.com/davgyl/covid_psyserv/blob/main/code/08_covid_patients_hospital.R",
+    title = "Supplemental Figure 1\nWeekly rate of COVID-19 patients treated in hospitals",
+    # subtitle = "Source: Finnish Institute for Health and Welfare",
+    caption = "Data source: Finnish Institute for Health and Welfare",    
+    # caption = "Data source: Finnish Institute for Health and Welfare\nData management: https://github.com/davgyl/covid_psyserv/blob/main/code/08_covid_patients_hospital.R",
     y = "Hospital rate for 1,000", 
-    x = "Date",
+    x = "Year and month",
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
