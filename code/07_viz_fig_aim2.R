@@ -42,23 +42,24 @@ plot2ab <-
     ncol = 2
     ) +
   
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey90", fill = "grey90") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
   geom_line() +
   scale_color_manual(
     values = 
       c(
-      "grey70",
+      "grey50",
       "black"
     )
       , 
     labels = 
       c(
-      "Expected rate with 95% CI",
+      "Predicted rate with 95% CI",
       "Observed rate"
     )
   ) +
   labs(
-    y = "Incidence service use\nrate per 1000", 
+    # y = "Incidence service use\nrate per 1000", 
+    y = "Diagnosis rate for 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -77,21 +78,22 @@ plot2cd <-
     ncol = 2
   ) +
   
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey90", fill = "grey90") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
   geom_line() +
   scale_color_manual(
     values = c(
-      "grey70", 
+      "grey50", 
       "black" 
     ), 
     labels = 
       c(
-      "Expected rate with 95% CI",
+      "Predicted rate with 95% CI",
       "Observed rate"
     )
   ) +
   labs(
-    y = "Incidence service use\nrate per 1000", 
+    # y = "Incidence service use\nrate per 1000", 
+    y = "Diagnosis rate for 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -110,20 +112,21 @@ plot2ef <-
     ncol = 2
   ) +
   
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey90", fill = "grey90") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
   geom_line() +
   scale_color_manual(
     values = c(
-      "grey70", 
+      "grey50", 
       "black" 
     ), 
     labels = c(
-      "Expected rate with 95% CI", 
+      "Predicted rate with 95% CI", 
       "Observed rate"
     )
   ) +
   labs(
-    y = "Incidence service use\nrate per 1000", 
+    # y = "Incidence service use\nrate per 1000", 
+    y = "Diagnosis rate for 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -183,23 +186,24 @@ plot3 <-
     scales = "free_y"
   ) +
   
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey90", fill = "grey90") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
   geom_line() +
   scale_color_manual(
     values = 
       c(
-        "grey70",
+        "grey50",
         "black"
       )
     , 
     labels = 
       c(
-        "Expected rate with 95% CI",
+        "Predicted rate with 95% CI",
         "Observed rate"
       )
   ) +
   labs(
-    y = "Incidence service use\nrate per 1000", 
+    # y = "Incidence service use\nrate per 1000", 
+    y = "Diagnosis rate for 1,000", 
     x = "Year and month",
     color = NULL
   ) +

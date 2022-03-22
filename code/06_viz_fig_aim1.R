@@ -1,7 +1,7 @@
 
 source("code//00_pkgs_utils.R")
 
-ts_m_combined
+# ts_m_combined
 list.files("results/", "_combined")
 
 # Neg bin
@@ -62,16 +62,16 @@ plot1b <-
   df_plot_long %>%
   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>%
   ggplot(aes(x = yearmonday, y = value, color = name)) +
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey90", fill = "grey90") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
   geom_line() +
   scale_y_continuous(limits = c(0, 2.2)) +
   scale_color_manual(
     values = c(
-      "grey70", 
+      "grey50", 
       "black" 
     ), 
     labels = c(
-      "Expected rate with 95% CI", 
+      "Predicted rate with 95% CI", 
       "Observed rate"
     )
   ) +
@@ -93,9 +93,10 @@ plot1b <-
   geom_vline(xintercept = "2021-09-15" %>% as.Date, linetype = "dashed") +
   
   labs(
-    # title = "Observed versus expected incidence rates",
+    # title = "Observed versus Predicted incidence rates",
     # subtitle = "Any diagnosis in specialized services",
-    y = "Incidence service use\nrate per 1000", 
+    # y = "Incidence service use\nrate per 1000", 
+    y = "Diagnosis rate for 1,000", 
     x = "Year",
     # x = "Year and month",
     color = NULL
@@ -161,7 +162,7 @@ plot1c <-
 
   scale_y_continuous(limits = c(-40, 40)) +
   
-  geom_bar(stat = "identity", color = "grey50", fill = "grey70") + 
+  geom_bar(stat = "identity", color = "grey50", fill = "grey50") + 
   
   geom_errorbar(
     aes(
@@ -217,7 +218,7 @@ plot1c <-
   labs(
     # title = "Difference between observed versus predicted rates",
     # subtitle = "Any diagnosis in specialized services",
-    y = "Relative difference between\nobseved and expected rates (%)", 
+    y = "Relative difference between\nobseved and predicted rates (%)", 
     x = "Year and month", 
     fill = "Significant difference"
   ) +
