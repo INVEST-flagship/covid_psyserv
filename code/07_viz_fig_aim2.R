@@ -154,14 +154,15 @@ ggsave(
     ".pdf"
   ),
   h = 6*1.6, w = 6, s = 1.5)
-# ggsave(
-#   paste0(
-#     "results/",
-#     "fig2_",
-#     f_timestamp(),
-#     ".png"
-#   ),
-#   h = 6*1.6, w = 6, s = 1.5)
+ggsave(
+  paste0(
+    "results/",
+    "fig2",
+    # "_",
+    # f_timestamp(),
+    ".png"
+  ),
+  h = 6*1.6, w = 6, s = 1.5)
 
 
 # Secondary outcomes ------------------------------------------------------
@@ -223,12 +224,12 @@ ggsave(
     ".pdf"
   ),
   h = 6*1.6, w = 6, s = 1.5)
-# ggsave(
-#   paste0(
-#     "results/",
-#     "fig3", 
-#     "_",
-#     f_timestamp(),
-#     ".png"
-#   ),
-#   h = 6*1.6, w = 6, s = 1.5)
+ggsave(
+  paste0(
+    "results/",
+    "fig3",
+    # "_",
+    # f_timestamp(),
+    ".png"
+  ),
+  h = 6*1.6, w = 6, s = 1.5)
