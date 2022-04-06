@@ -234,23 +234,25 @@ plot3 <-
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
-  theme(legend.position = c(0.85, 0.025),
-        legend.justification = c(1, 0))
-  # theme(legend.position = "none")
+  theme(
+    # legend.position = c(0.85, 0.025),
+    legend.position = c(0.95, 0.01),
+    legend.justification = c(1, 0))
+# theme(legend.position = "none")
 
-# plot3
-# 
-# ggsave(
-#   paste0(
-#     "results/",
-#     "Fig3",
-#     ".eps"
-#   ),
-#   units = "cm",
-#   dpi = 600,
-#   h = as.integer(22.23),
-#   w = as.integer(22.23/1.6),
-#   s = 1.2)
+plot3
+
+ggsave(
+  paste0(
+    "results/",
+    "Fig3",
+    ".eps"
+  ),
+  units = "cm",
+  dpi = 600,
+  h = as.integer(22.23),
+  w = as.integer(22.23/1.6),
+  s = 1.3)
 
 # sc <- 1.35
 # tiff(
