@@ -1,8 +1,8 @@
 
 source("code//00_pkgs_utils.R")
 
-ts_m_combined
-list.files("results/", "_combined")
+# ts_m_combined
+# list.files("results/", "_combined")
 
 # Neg bin
 ts_m_combined <- read_rds("results/ts_m_negbin_combined.rds")
@@ -12,8 +12,8 @@ ts_m_combined <- read_rds("results/ts_m_negbin_combined.rds")
 
 # Stratified
 
-ts_m_combined %>% count(ts)
-ts_m_combined %>% count(lab_outcome, order_outcome) %>% arrange(order_outcome)
+# ts_m_combined %>% count(ts)
+# ts_m_combined %>% count(lab_outcome, order_outcome) %>% arrange(order_outcome)
 
 df_plot_long <- 
   ts_m_combined %>% 
@@ -66,7 +66,7 @@ plot2ab <-
   theme_minimal(base_size = 15) +
   theme(legend.position = "none")
 
-plot2ab
+# plot2ab
 
 plot2cd <-
   df_plot_long %>%
@@ -100,7 +100,7 @@ plot2cd <-
   theme_minimal(base_size = 15) +
   theme(legend.position = "none")
 
-plot2cd
+# plot2cd
 
 plot2ef <-
   df_plot_long %>%
@@ -134,9 +134,9 @@ plot2ef <-
   # theme(legend.position = "none")
   theme(legend.position="bottom")
 
-plot2ef
+# plot2ef
 
-cowplot::plot_grid(
+fig2 <- cowplot::plot_grid(
   plot2ab, 
   plot2cd, 
   plot2ef, 
@@ -145,24 +145,36 @@ cowplot::plot_grid(
 )
 
 
-ggsave(
-  paste0(
-    "results/",
-    "fig2", 
-    # "_",
-    # f_timestamp(),
-    ".pdf"
-  ),
-  h = 6*1.6, w = 6, s = 1.5)
-ggsave(
-  paste0(
-    "results/",
-    "fig2",
-    # "_",
-    # f_timestamp(),
-    ".png"
-  ),
-  h = 6*1.6, w = 6, s = 1.5)
+# sc <- 1.35
+# tiff(
+#   "results/Fig2.tiff",
+#   units = "px",
+#   width = as.integer(2625/1.6/sc),
+#   height = as.integer(2625/sc),
+#   res = 350/(sc+0.5))
+# fig2
+# dev.off()
+
+# fig2
+# 
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig2", 
+#     # "_",
+#     # f_timestamp(),
+#     ".pdf"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.5)
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig2",
+#     # "_",
+#     # f_timestamp(),
+#     ".png"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.5)
 
 
 # Secondary outcomes ------------------------------------------------------
@@ -213,23 +225,34 @@ plot3 <-
         legend.justification = c(1, 0))
   # theme(legend.position = "none")
 
-plot3
+# sc <- 1.35
+# tiff(
+#   "results/Fig3.tiff",
+#   units = "px",
+#   width = as.integer(2625/1.6/sc),
+#   height = as.integer(2625/sc),
+#   res = 350/(sc+0.5))
+# plot3
+# dev.off()
 
-ggsave(
-  paste0(
-    "results/",
-    "fig3", 
-    # "_",
-    # f_timestamp(),
-    ".pdf"
-  ),
-  h = 6*1.6, w = 6, s = 1.5)
-ggsave(
-  paste0(
-    "results/",
-    "fig3",
-    # "_",
-    # f_timestamp(),
-    ".png"
-  ),
-  h = 6*1.6, w = 6, s = 1.5)
+
+# plot3
+
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig3", 
+#     # "_",
+#     # f_timestamp(),
+#     ".pdf"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.5)
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig3",
+#     # "_",
+#     # f_timestamp(),
+#     ".png"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.5)

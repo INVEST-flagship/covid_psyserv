@@ -2,7 +2,7 @@
 source("code//00_pkgs_utils.R")
 
 # ts_m_combined
-list.files("results/", "_combined")
+# list.files("results/", "_combined")
 
 # Neg bin
 ts_m_combined <- read_rds("results/ts_m_negbin_combined.rds")
@@ -12,7 +12,7 @@ ts_m_combined <- read_rds("results/ts_m_negbin_combined.rds")
 
 # Data frame for plotting
 
-ts_m_combined %>% count(ts)
+# ts_m_combined %>% count(ts)
 
 plot1a <-
   ts_m_combined %>%
@@ -29,7 +29,7 @@ plot1a <-
   ) +
   theme_minimal(base_size = 15) 
  
-plot1a
+# plot1a
 
 # ggsave(
 #   paste0(
@@ -54,9 +54,9 @@ df_plot_long <-
     )
   )
 
-df_plot_long %>%
-  filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
-  select(yearmonday, value, name)
+# df_plot_long %>%
+#   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
+#   select(yearmonday, value, name)
 
 plot1b <-
   df_plot_long %>%
@@ -104,7 +104,7 @@ plot1b <-
   theme_minimal(base_size = 15) +
   theme(legend.position="bottom")
 
-plot1b
+# plot1b
 
 # ggsave(
 #   paste0(
@@ -115,9 +115,9 @@ plot1b
 #   ),
 #   h = 6, w = 6*1.6, s = 0.8)
 
-plot1b %+%
-  list(data = df_plot_long %>% 
-         filter(ts == "01_any", yearmonday >= "2017-01-01", yearmonday <= "2021-10-01"))
+# plot1b %+%
+#   list(data = df_plot_long %>% 
+#          filter(ts == "01_any", yearmonday >= "2017-01-01", yearmonday <= "2021-10-01"))
 
 # ggsave(
 #   paste0(
@@ -130,11 +130,11 @@ plot1b %+%
 
 # Fig1 (rel change per month as bar chart) ------------------------------
 
-ts_m_combined %>% 
-  mutate(
-    diff_rate_rel_perc_lo = (1 - (negbin_pred_rate_hi / rate1000)) * 100,
-    diff_rate_rel_perc_hi = (1 - (negbin_pred_rate_lo / rate1000)) * 100,
-  )
+# ts_m_combined %>% 
+#   mutate(
+#     diff_rate_rel_perc_lo = (1 - (negbin_pred_rate_hi / rate1000)) * 100,
+#     diff_rate_rel_perc_hi = (1 - (negbin_pred_rate_lo / rate1000)) * 100,
+#   )
 
 boxes <- 
   read.xlsx(
@@ -226,7 +226,7 @@ plot1c <-
   theme(legend.position="bottom")
 
 
-plot1c
+# plot1c
 
 # ggsave(
 #   paste0(
@@ -237,7 +237,8 @@ plot1c
 #   ),
 #   h = 6, w = 6*1.6, s = 0.8)
 
-cowplot::plot_grid(
+fig1 <- 
+  cowplot::plot_grid(
   plot1b %+%
     list(data = df_plot_long %>% 
            filter(ts == "01_any", yearmonday >= "2017-01-01", yearmonday <= "2022-01-01")), 
@@ -245,26 +246,45 @@ cowplot::plot_grid(
   ncol = 1,
   rel_heights = c(0.4, 0.6),
   labels = "AUTO"
-)
+) 
 
-ggsave(
-  paste0(
-    "results/",
-    "fig1_ab",
-    # "_",
-    # f_timestamp(),
-    ".pdf"
-  ),
-  h = 6*1.6, w = 6, s = 1.2)
-ggsave(
-  paste0(
-    "results/",
-    "fig1_ab",
-    # "_",
-    # f_timestamp(),
-    ".png"
-  ),
-  h = 6*1.6, w = 6, s = 1.2)
+# sc <- 1.35
+# tiff(
+#   "results/Fig1.tiff", 
+#   units = "px", 
+#   width = as.integer(2625/1.6/sc), 
+#   height = as.integer(2625/sc), 
+#   res = 350/(sc+0.5))
+# fig1
+# dev.off()
+
+# fig1
+
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig1",
+#     ".tiff"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.2)
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig1_ab",
+#     # "_",
+#     # f_timestamp(),
+#     ".pdf"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.2)
+# ggsave(
+#   paste0(
+#     "results/",
+#     "fig1_ab",
+#     # "_",
+#     # f_timestamp(),
+#     ".png"
+#   ),
+#   h = 6*1.6, w = 6, s = 1.2)
 
 
 # Table of relative difference by month -----------------------------------
