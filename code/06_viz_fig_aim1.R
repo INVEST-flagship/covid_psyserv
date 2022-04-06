@@ -248,18 +248,33 @@ fig1 <-
   labels = "AUTO"
 ) 
 
-# sc <- 1.35
-# tiff(
-#   "results/Fig1.tiff", 
-#   units = "px", 
-#   width = as.integer(2625/1.6/sc), 
-#   height = as.integer(2625/sc), 
-#   res = 350/(sc+0.5))
-# fig1
-# dev.off()
 
 # fig1
+# 
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig1",
+#     ".eps"
+#   ),
+#   units = "cm",
+#   dpi = 600,
+#   h = as.integer(22.23), 
+#   w = as.integer(22.23/1.6), 
+#   s = 1.2)
 
+# sc <- 1
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig1",
+#     ".tiff"
+#   ),
+#   units = "cm",
+#   dpi = 300,
+#   h = as.integer(22.23*sc), 
+#   w = as.integer(22.23/1.6*sc), 
+#   s = 1.2*sc)
 # ggsave(
 #   paste0(
 #     "results/",
@@ -286,6 +301,20 @@ fig1 <-
 #   ),
 #   h = 6*1.6, w = 6, s = 1.2)
 
+# sc <- 1.2
+# point_sc = 0.1
+# tiff(
+#   "results/Fig1.tiff",
+#   units = "px",
+#   width = as.integer(2625/1.6*sc),
+#   height = as.integer(2625*sc),
+#   # units = "cm",
+#   # width = as.integer(22.23/1.6*sc),
+#   # height = as.integer(22.23*sc),
+#   res = 300
+#   )
+# fig1
+# dev.off()
 
 # Table of relative difference by month -----------------------------------
 

@@ -144,6 +144,19 @@ fig2 <- cowplot::plot_grid(
   labels = "AUTO"
 )
 
+# fig2
+# 
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig2",
+#     ".eps"
+#   ),
+#   units = "cm",
+#   dpi = 600,
+#   h = as.integer(22.23),
+#   w = as.integer(22.23/1.6),
+#   s = 1.2)
 
 # sc <- 1.35
 # tiff(
@@ -224,6 +237,20 @@ plot3 <-
   theme(legend.position = c(0.85, 0.025),
         legend.justification = c(1, 0))
   # theme(legend.position = "none")
+
+# plot3
+# 
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig3",
+#     ".eps"
+#   ),
+#   units = "cm",
+#   dpi = 600,
+#   h = as.integer(22.23),
+#   w = as.integer(22.23/1.6),
+#   s = 1.2)
 
 # sc <- 1.35
 # tiff(
