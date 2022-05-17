@@ -250,3 +250,49 @@ write_csv(
     ".csv"
   )
 )
+
+
+# Test difference to new updated denominator --------------------------------
+
+ts_m
+cens_sum
+
+ts_m %>% count(ts)
+
+old <- 
+  ts_m %>% 
+  filter(ts == "04_area") %>% 
+  select(
+    lab_area, 
+    YEAR, 
+    nrisk
+  ) %>% 
+  unique()
+
+new <- 
+  cens_sum %>% 
+  mutate(
+    lab_area = case_when(
+      area == "ER1 Helsinki University Hospital specific catchment area" ~ "Helsinki University Hospital area", 
+      T ~ "Rest of Finland"
+    )
+  ) %>% 
+  filter(gender != "Total") %>% 
+  filter(year != 2016) %>% 
+  group_by(
+    year, 
+    lab_area
+  ) %>% 
+  summarise(
+    nrisk_new = sum(n_at_risk)
+  ) %>% 
+  ungroup() %>% 
+  select(
+    lab_area, 
+    year, 
+    nrisk_new
+  ) %>% 
+  unique() %>% 
+  rename(YEAR = year)
+
+old %>% left_join(new)
