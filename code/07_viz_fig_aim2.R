@@ -43,7 +43,8 @@ plot2ab <-
     ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line() +
+  geom_line(aes(linetype = name)) +
+  scale_linetype_manual(values = c(2, 1)) +
   scale_color_manual(
     values = 
       c(
@@ -79,7 +80,8 @@ plot2cd <-
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line() +
+  geom_line(aes(linetype = name)) +
+  scale_linetype_manual(values = c(2, 1)) +
   scale_color_manual(
     values = c(
       "grey50", 
@@ -106,14 +108,14 @@ plot2ef <-
   df_plot_long %>%
   filter(ts == "04_area", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value, color = name)) +
-  
   facet_wrap(
     ~ lab_area, 
     ncol = 2
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line() +
+  geom_line(aes(linetype = name)) +
+  scale_linetype_manual(values = c(2, 1)) +
   scale_color_manual(
     values = c(
       "grey50", 
@@ -131,8 +133,8 @@ plot2ef <-
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
-  # theme(legend.position = "none")
-  theme(legend.position="bottom")
+  theme(legend.position = "none")
+  # theme(legend.position="bottom")
 
 # plot2ef
 
@@ -213,7 +215,8 @@ plot3 <-
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line() +
+  geom_line(aes(linetype = name)) +
+  scale_linetype_manual(values = c(2, 1)) +
   scale_color_manual(
     values = 
       c(
@@ -234,11 +237,11 @@ plot3 <-
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
-  theme(
+  # theme(
     # legend.position = c(0.85, 0.025),
-    legend.position = c(0.95, 0.01),
-    legend.justification = c(1, 0))
-# theme(legend.position = "none")
+    # legend.position = c(0.95, 0.01),
+    # legend.justification = c(1, 0))
+theme(legend.position = "none")
 
 plot3
 
