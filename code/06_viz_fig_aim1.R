@@ -96,7 +96,7 @@ plot1b <-
     # title = "Observed versus Predicted incidence rates",
     # subtitle = "Any diagnosis in specialized services",
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year",
     # x = "Year and month",
     color = NULL

@@ -59,7 +59,7 @@ plot2ab <-
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -93,7 +93,7 @@ plot2cd <-
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -126,7 +126,7 @@ plot2ef <-
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year and month",
     color = NULL
   ) +
@@ -229,7 +229,7 @@ plot3 <-
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year and month",
     color = NULL
   ) +
