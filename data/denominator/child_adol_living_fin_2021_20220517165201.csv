@@ -1,0 +1,217 @@
+area,year,gender,age_group,n_at_risk
+ER1 Helsinki University Hospital specific catchment area,2016,Females,0-12,148291
+ER1 Helsinki University Hospital specific catchment area,2016,Females,13-17,55000
+ER1 Helsinki University Hospital specific catchment area,2016,Males,0-12,155778
+ER1 Helsinki University Hospital specific catchment area,2016,Males,13-17,57246
+ER1 Helsinki University Hospital specific catchment area,2016,Total,0-12,304069
+ER1 Helsinki University Hospital specific catchment area,2016,Total,13-17,112246
+ER1 Helsinki University Hospital specific catchment area,2017,Females,0-12,148013
+ER1 Helsinki University Hospital specific catchment area,2017,Females,13-17,55525
+ER1 Helsinki University Hospital specific catchment area,2017,Males,0-12,155549
+ER1 Helsinki University Hospital specific catchment area,2017,Males,13-17,57760
+ER1 Helsinki University Hospital specific catchment area,2017,Total,0-12,303562
+ER1 Helsinki University Hospital specific catchment area,2017,Total,13-17,113285
+ER1 Helsinki University Hospital specific catchment area,2018,Females,0-12,147123
+ER1 Helsinki University Hospital specific catchment area,2018,Females,13-17,56197
+ER1 Helsinki University Hospital specific catchment area,2018,Males,0-12,154654
+ER1 Helsinki University Hospital specific catchment area,2018,Males,13-17,58167
+ER1 Helsinki University Hospital specific catchment area,2018,Total,0-12,301777
+ER1 Helsinki University Hospital specific catchment area,2018,Total,13-17,114364
+ER1 Helsinki University Hospital specific catchment area,2019,Females,0-12,145786
+ER1 Helsinki University Hospital specific catchment area,2019,Females,13-17,57139
+ER1 Helsinki University Hospital specific catchment area,2019,Males,0-12,153110
+ER1 Helsinki University Hospital specific catchment area,2019,Males,13-17,59197
+ER1 Helsinki University Hospital specific catchment area,2019,Total,0-12,298896
+ER1 Helsinki University Hospital specific catchment area,2019,Total,13-17,116336
+ER1 Helsinki University Hospital specific catchment area,2020,Females,0-12,144268
+ER1 Helsinki University Hospital specific catchment area,2020,Females,13-17,58248
+ER1 Helsinki University Hospital specific catchment area,2020,Males,0-12,151632
+ER1 Helsinki University Hospital specific catchment area,2020,Males,13-17,60354
+ER1 Helsinki University Hospital specific catchment area,2020,Total,0-12,295900
+ER1 Helsinki University Hospital specific catchment area,2020,Total,13-17,118602
+ER1 Helsinki University Hospital specific catchment area,2021,Females,0-12,143003
+ER1 Helsinki University Hospital specific catchment area,2021,Females,13-17,59141
+ER1 Helsinki University Hospital specific catchment area,2021,Males,0-12,150182
+ER1 Helsinki University Hospital specific catchment area,2021,Males,13-17,61489
+ER1 Helsinki University Hospital specific catchment area,2021,Total,0-12,293185
+ER1 Helsinki University Hospital specific catchment area,2021,Total,13-17,120630
+ER3 Tampere University Hospital specific catchment area,2016,Females,0-12,62606
+ER3 Tampere University Hospital specific catchment area,2016,Females,13-17,23667
+ER3 Tampere University Hospital specific catchment area,2016,Males,0-12,65307
+ER3 Tampere University Hospital specific catchment area,2016,Males,13-17,24799
+ER3 Tampere University Hospital specific catchment area,2016,Total,0-12,127913
+ER3 Tampere University Hospital specific catchment area,2016,Total,13-17,48466
+ER3 Tampere University Hospital specific catchment area,2017,Females,0-12,61767
+ER3 Tampere University Hospital specific catchment area,2017,Females,13-17,23806
+ER3 Tampere University Hospital specific catchment area,2017,Males,0-12,64492
+ER3 Tampere University Hospital specific catchment area,2017,Males,13-17,24915
+ER3 Tampere University Hospital specific catchment area,2017,Total,0-12,126259
+ER3 Tampere University Hospital specific catchment area,2017,Total,13-17,48721
+ER3 Tampere University Hospital specific catchment area,2018,Females,0-12,60526
+ER3 Tampere University Hospital specific catchment area,2018,Females,13-17,24015
+ER3 Tampere University Hospital specific catchment area,2018,Males,0-12,63623
+ER3 Tampere University Hospital specific catchment area,2018,Males,13-17,24974
+ER3 Tampere University Hospital specific catchment area,2018,Total,0-12,124149
+ER3 Tampere University Hospital specific catchment area,2018,Total,13-17,48989
+ER3 Tampere University Hospital specific catchment area,2019,Females,0-12,59352
+ER3 Tampere University Hospital specific catchment area,2019,Females,13-17,24330
+ER3 Tampere University Hospital specific catchment area,2019,Males,0-12,62386
+ER3 Tampere University Hospital specific catchment area,2019,Males,13-17,25196
+ER3 Tampere University Hospital specific catchment area,2019,Total,0-12,121738
+ER3 Tampere University Hospital specific catchment area,2019,Total,13-17,49526
+ER3 Tampere University Hospital specific catchment area,2020,Females,0-12,58195
+ER3 Tampere University Hospital specific catchment area,2020,Females,13-17,24592
+ER3 Tampere University Hospital specific catchment area,2020,Males,0-12,60952
+ER3 Tampere University Hospital specific catchment area,2020,Males,13-17,25696
+ER3 Tampere University Hospital specific catchment area,2020,Total,0-12,119147
+ER3 Tampere University Hospital specific catchment area,2020,Total,13-17,50288
+ER3 Tampere University Hospital specific catchment area,2021,Females,0-12,57126
+ER3 Tampere University Hospital specific catchment area,2021,Females,13-17,25034
+ER3 Tampere University Hospital specific catchment area,2021,Males,0-12,60002
+ER3 Tampere University Hospital specific catchment area,2021,Males,13-17,26065
+ER3 Tampere University Hospital specific catchment area,2021,Total,0-12,117128
+ER3 Tampere University Hospital specific catchment area,2021,Total,13-17,51099
+ER3 Turku University Hospital specific catchment area,2016,Females,0-12,57621
+ER3 Turku University Hospital specific catchment area,2016,Females,13-17,22090
+ER3 Turku University Hospital specific catchment area,2016,Males,0-12,60191
+ER3 Turku University Hospital specific catchment area,2016,Males,13-17,23633
+ER3 Turku University Hospital specific catchment area,2016,Total,0-12,117812
+ER3 Turku University Hospital specific catchment area,2016,Total,13-17,45723
+ER3 Turku University Hospital specific catchment area,2017,Females,0-12,57240
+ER3 Turku University Hospital specific catchment area,2017,Females,13-17,21929
+ER3 Turku University Hospital specific catchment area,2017,Males,0-12,59560
+ER3 Turku University Hospital specific catchment area,2017,Males,13-17,23551
+ER3 Turku University Hospital specific catchment area,2017,Total,0-12,116800
+ER3 Turku University Hospital specific catchment area,2017,Total,13-17,45480
+ER3 Turku University Hospital specific catchment area,2018,Females,0-12,56478
+ER3 Turku University Hospital specific catchment area,2018,Females,13-17,21922
+ER3 Turku University Hospital specific catchment area,2018,Males,0-12,58892
+ER3 Turku University Hospital specific catchment area,2018,Males,13-17,23408
+ER3 Turku University Hospital specific catchment area,2018,Total,0-12,115370
+ER3 Turku University Hospital specific catchment area,2018,Total,13-17,45330
+ER3 Turku University Hospital specific catchment area,2019,Females,0-12,55302
+ER3 Turku University Hospital specific catchment area,2019,Females,13-17,22224
+ER3 Turku University Hospital specific catchment area,2019,Males,0-12,57938
+ER3 Turku University Hospital specific catchment area,2019,Males,13-17,23593
+ER3 Turku University Hospital specific catchment area,2019,Total,0-12,113240
+ER3 Turku University Hospital specific catchment area,2019,Total,13-17,45817
+ER3 Turku University Hospital specific catchment area,2020,Females,0-12,54416
+ER3 Turku University Hospital specific catchment area,2020,Females,13-17,22456
+ER3 Turku University Hospital specific catchment area,2020,Males,0-12,57125
+ER3 Turku University Hospital specific catchment area,2020,Males,13-17,23677
+ER3 Turku University Hospital specific catchment area,2020,Total,0-12,111541
+ER3 Turku University Hospital specific catchment area,2020,Total,13-17,46133
+ER3 Turku University Hospital specific catchment area,2021,Females,0-12,53902
+ER3 Turku University Hospital specific catchment area,2021,Females,13-17,22620
+ER3 Turku University Hospital specific catchment area,2021,Males,0-12,56366
+ER3 Turku University Hospital specific catchment area,2021,Males,13-17,23878
+ER3 Turku University Hospital specific catchment area,2021,Total,0-12,110268
+ER3 Turku University Hospital specific catchment area,2021,Total,13-17,46498
+ER4 Kuopio University Hospital specific catchment area,2016,Females,0-12,51941
+ER4 Kuopio University Hospital specific catchment area,2016,Females,13-17,20666
+ER4 Kuopio University Hospital specific catchment area,2016,Males,0-12,53926
+ER4 Kuopio University Hospital specific catchment area,2016,Males,13-17,21690
+ER4 Kuopio University Hospital specific catchment area,2016,Total,0-12,105867
+ER4 Kuopio University Hospital specific catchment area,2016,Total,13-17,42356
+ER4 Kuopio University Hospital specific catchment area,2017,Females,0-12,51110
+ER4 Kuopio University Hospital specific catchment area,2017,Females,13-17,20440
+ER4 Kuopio University Hospital specific catchment area,2017,Males,0-12,53077
+ER4 Kuopio University Hospital specific catchment area,2017,Males,13-17,21477
+ER4 Kuopio University Hospital specific catchment area,2017,Total,0-12,104187
+ER4 Kuopio University Hospital specific catchment area,2017,Total,13-17,41917
+ER4 Kuopio University Hospital specific catchment area,2018,Females,0-12,50036
+ER4 Kuopio University Hospital specific catchment area,2018,Females,13-17,20353
+ER4 Kuopio University Hospital specific catchment area,2018,Males,0-12,52116
+ER4 Kuopio University Hospital specific catchment area,2018,Males,13-17,21351
+ER4 Kuopio University Hospital specific catchment area,2018,Total,0-12,102152
+ER4 Kuopio University Hospital specific catchment area,2018,Total,13-17,41704
+ER4 Kuopio University Hospital specific catchment area,2019,Females,0-12,48805
+ER4 Kuopio University Hospital specific catchment area,2019,Females,13-17,20408
+ER4 Kuopio University Hospital specific catchment area,2019,Males,0-12,50651
+ER4 Kuopio University Hospital specific catchment area,2019,Males,13-17,21383
+ER4 Kuopio University Hospital specific catchment area,2019,Total,0-12,99456
+ER4 Kuopio University Hospital specific catchment area,2019,Total,13-17,41791
+ER4 Kuopio University Hospital specific catchment area,2020,Females,0-12,47752
+ER4 Kuopio University Hospital specific catchment area,2020,Females,13-17,20539
+ER4 Kuopio University Hospital specific catchment area,2020,Males,0-12,49457
+ER4 Kuopio University Hospital specific catchment area,2020,Males,13-17,21536
+ER4 Kuopio University Hospital specific catchment area,2020,Total,0-12,97209
+ER4 Kuopio University Hospital specific catchment area,2020,Total,13-17,42075
+ER4 Kuopio University Hospital specific catchment area,2021,Females,0-12,46885
+ER4 Kuopio University Hospital specific catchment area,2021,Females,13-17,20444
+ER4 Kuopio University Hospital specific catchment area,2021,Males,0-12,48556
+ER4 Kuopio University Hospital specific catchment area,2021,Males,13-17,21565
+ER4 Kuopio University Hospital specific catchment area,2021,Total,0-12,95441
+ER4 Kuopio University Hospital specific catchment area,2021,Total,13-17,42009
+ER5 Oulu University Hospital specific catchment area,2016,Females,0-12,57548
+ER5 Oulu University Hospital specific catchment area,2016,Females,13-17,21217
+ER5 Oulu University Hospital specific catchment area,2016,Males,0-12,60126
+ER5 Oulu University Hospital specific catchment area,2016,Males,13-17,22827
+ER5 Oulu University Hospital specific catchment area,2016,Total,0-12,117674
+ER5 Oulu University Hospital specific catchment area,2016,Total,13-17,44044
+ER5 Oulu University Hospital specific catchment area,2017,Females,0-12,56957
+ER5 Oulu University Hospital specific catchment area,2017,Females,13-17,21283
+ER5 Oulu University Hospital specific catchment area,2017,Males,0-12,59285
+ER5 Oulu University Hospital specific catchment area,2017,Males,13-17,22757
+ER5 Oulu University Hospital specific catchment area,2017,Total,0-12,116242
+ER5 Oulu University Hospital specific catchment area,2017,Total,13-17,44040
+ER5 Oulu University Hospital specific catchment area,2018,Females,0-12,55795
+ER5 Oulu University Hospital specific catchment area,2018,Females,13-17,21628
+ER5 Oulu University Hospital specific catchment area,2018,Males,0-12,58157
+ER5 Oulu University Hospital specific catchment area,2018,Males,13-17,22774
+ER5 Oulu University Hospital specific catchment area,2018,Total,0-12,113952
+ER5 Oulu University Hospital specific catchment area,2018,Total,13-17,44402
+ER5 Oulu University Hospital specific catchment area,2019,Females,0-12,54617
+ER5 Oulu University Hospital specific catchment area,2019,Females,13-17,21829
+ER5 Oulu University Hospital specific catchment area,2019,Males,0-12,56724
+ER5 Oulu University Hospital specific catchment area,2019,Males,13-17,23177
+ER5 Oulu University Hospital specific catchment area,2019,Total,0-12,111341
+ER5 Oulu University Hospital specific catchment area,2019,Total,13-17,45006
+ER5 Oulu University Hospital specific catchment area,2020,Females,0-12,53515
+ER5 Oulu University Hospital specific catchment area,2020,Females,13-17,22227
+ER5 Oulu University Hospital specific catchment area,2020,Males,0-12,55553
+ER5 Oulu University Hospital specific catchment area,2020,Males,13-17,23381
+ER5 Oulu University Hospital specific catchment area,2020,Total,0-12,109068
+ER5 Oulu University Hospital specific catchment area,2020,Total,13-17,45608
+ER5 Oulu University Hospital specific catchment area,2021,Females,0-12,52504
+ER5 Oulu University Hospital specific catchment area,2021,Females,13-17,22555
+ER5 Oulu University Hospital specific catchment area,2021,Males,0-12,54434
+ER5 Oulu University Hospital specific catchment area,2021,Males,13-17,23762
+ER5 Oulu University Hospital specific catchment area,2021,Total,0-12,106938
+ER5 Oulu University Hospital specific catchment area,2021,Total,13-17,46317
+ER6 Åland,2016,Females,0-12,2037
+ER6 Åland,2016,Females,13-17,739
+ER6 Åland,2016,Males,0-12,2119
+ER6 Åland,2016,Males,13-17,840
+ER6 Åland,2016,Total,0-12,4156
+ER6 Åland,2016,Total,13-17,1579
+ER6 Åland,2017,Females,0-12,2047
+ER6 Åland,2017,Females,13-17,743
+ER6 Åland,2017,Males,0-12,2144
+ER6 Åland,2017,Males,13-17,834
+ER6 Åland,2017,Total,0-12,4191
+ER6 Åland,2017,Total,13-17,1577
+ER6 Åland,2018,Females,0-12,2082
+ER6 Åland,2018,Females,13-17,782
+ER6 Åland,2018,Males,0-12,2209
+ER6 Åland,2018,Males,13-17,829
+ER6 Åland,2018,Total,0-12,4291
+ER6 Åland,2018,Total,13-17,1611
+ER6 Åland,2019,Females,0-12,2076
+ER6 Åland,2019,Females,13-17,798
+ER6 Åland,2019,Males,0-12,2187
+ER6 Åland,2019,Males,13-17,849
+ER6 Åland,2019,Total,0-12,4263
+ER6 Åland,2019,Total,13-17,1647
+ER6 Åland,2020,Females,0-12,2091
+ER6 Åland,2020,Females,13-17,815
+ER6 Åland,2020,Males,0-12,2175
+ER6 Åland,2020,Males,13-17,874
+ER6 Åland,2020,Total,0-12,4266
+ER6 Åland,2020,Total,13-17,1689
+ER6 Åland,2021,Females,0-12,2101
+ER6 Åland,2021,Females,13-17,848
+ER6 Åland,2021,Males,0-12,2163
+ER6 Åland,2021,Males,13-17,892
+ER6 Åland,2021,Total,0-12,4264
+ER6 Åland,2021,Total,13-17,1740
