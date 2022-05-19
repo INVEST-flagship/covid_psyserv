@@ -63,8 +63,10 @@ plot1b <-
   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>%
   ggplot(aes(x = yearmonday, y = value, color = name)) +
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line() +
+  geom_line(aes(linetype = name)) +
+  scale_linetype_manual(values = c(2, 1)) +
   scale_y_continuous(limits = c(0, 2.2)) +
+
   scale_color_manual(
     values = c(
       "grey50", 
@@ -82,7 +84,7 @@ plot1b <-
            hjust = 0,
            label = "March\n2020") +
   
-  geom_vline(xintercept = "2020-03-15" %>% as.Date, linetype = "dashed") +
+  geom_vline(xintercept = "2020-03-15" %>% as.Date, linetype = "dotted") +
   
   annotate("text",
            x = "2021-09-15" %>% as.Date - 5, 
@@ -90,19 +92,23 @@ plot1b <-
            hjust = 1,
            label = "September\n2021") +
   
-  geom_vline(xintercept = "2021-09-15" %>% as.Date, linetype = "dashed") +
+  geom_vline(xintercept = "2021-09-15" %>% as.Date, linetype = "dotted") +
   
+  theme_minimal(base_size = 15) +
+
+  theme(legend.position="none") +
+
   labs(
     # title = "Observed versus Predicted incidence rates",
     # subtitle = "Any diagnosis in specialized services",
     # y = "Incidence service use\nrate per 1000", 
-    y = "Diagnosis rate for 1,000", 
+    y = "Diagnosis rate per 1,000", 
     x = "Year",
     # x = "Year and month",
+
     color = NULL
-  ) +
-  theme_minimal(base_size = 15) +
-  theme(legend.position="bottom")
+  ) 
+  
 
 # plot1b
 

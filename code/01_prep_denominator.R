@@ -21,6 +21,15 @@ cens_csv <- read_csv(
 # https://pxnet2.stat.fi:443/PXWeb/sq/8d93e5b0-12ac-4bc0-8665-4822a723e47b
 # https://pxnet2.stat.fi:443/PXWeb/sq/30476ccf-2900-49ca-b03e-6320a46b675f
 
+# Updated 2022-05-17:
+
+# https://pxnet2.stat.fi:443/PXWeb/api/v1/en/StatFin/vrm/vaerak/statfin_vaerak_pxt_11re.px
+# https://pxnet2.stat.fi:443/PXWeb/sq/94de3166-3b27-43fb-b17b-2c151cd534a3
+
+cens_csv <- read_csv(
+  "data/denominator/001_11re_2021_20220517-160323.csv"
+)
+
 # Tidy data ---------------------------------------------------------------
 
 # Rename
@@ -37,30 +46,53 @@ cens_t <-
   cens_csv %>% 
   select(1:2, starts_with("Total"))
 
+# colnames(cens_m) <- 
+#   c("Area", "Age", 2016:2020)
+# 
+# colnames(cens_f) <- 
+#   c("Area", "Age", 2016:2020)
+# 
+# colnames(cens_t) <- 
+#   c("Area", "Age", 2016:2020)
+
 colnames(cens_m) <- 
-  c("Area", "Age", 2016:2020)
+  c("Area", "Age", 2016:2021)
 
 colnames(cens_f) <- 
-  c("Area", "Age", 2016:2020)
+  c("Area", "Age", 2016:2021)
 
 colnames(cens_t) <- 
-  c("Area", "Age", 2016:2020)
+  c("Area", "Age", 2016:2021)
 
 # Make long data and bind rows
+
+# cens_tidy <- 
+#   bind_rows(
+#     cens_m %>% 
+#       pivot_longer(3:7, "year") %>% 
+#       pivot_longer(3:7, "year") %>% 
+#       mutate(gender = "Males"),
+#     cens_f %>% 
+#       pivot_longer(3:7, "year") %>% 
+#       pivot_longer(3:7, "year") %>% 
+#       mutate(gender = "Females"),
+#     cens_t %>% 
+#       pivot_longer(3:7, "year") %>% 
+#       mutate(gender = "Total")
+#   )
 
 cens_tidy <- 
   bind_rows(
     cens_m %>% 
-      pivot_longer(3:7, "year") %>% 
+      pivot_longer(3:8, "year") %>% 
       mutate(gender = "Males"),
     cens_f %>% 
-      pivot_longer(3:7, "year") %>% 
+      pivot_longer(3:8, "year") %>% 
       mutate(gender = "Females"),
     cens_t %>% 
-      pivot_longer(3:7, "year") %>% 
+      pivot_longer(3:8, "year") %>% 
       mutate(gender = "Total")
   )
-
 # Summarise by age group and other stratifiers
 
 cens_sum <- 
@@ -100,8 +132,9 @@ cens_sum
 write_csv(
   cens_sum, 
   paste0(
-    "/data/denomintor/",
-    "child_adol_living_fin_2020_",
+    "/Users/David/Documents/GitHub/covid_psyserv",
+    "/data/denominator/",
+    "child_adol_living_fin_2021_",
     f_timestamp(),
     ".csv"
   )
@@ -217,3 +250,49 @@ write_csv(
     ".csv"
   )
 )
+
+
+# Test difference to new updated denominator --------------------------------
+
+ts_m
+cens_sum
+
+ts_m %>% count(ts)
+
+old <- 
+  ts_m %>% 
+  filter(ts == "04_area") %>% 
+  select(
+    lab_area, 
+    YEAR, 
+    nrisk
+  ) %>% 
+  unique()
+
+new <- 
+  cens_sum %>% 
+  mutate(
+    lab_area = case_when(
+      area == "ER1 Helsinki University Hospital specific catchment area" ~ "Helsinki University Hospital area", 
+      T ~ "Rest of Finland"
+    )
+  ) %>% 
+  filter(gender != "Total") %>% 
+  filter(year != 2016) %>% 
+  group_by(
+    year, 
+    lab_area
+  ) %>% 
+  summarise(
+    nrisk_new = sum(n_at_risk)
+  ) %>% 
+  ungroup() %>% 
+  select(
+    lab_area, 
+    year, 
+    nrisk_new
+  ) %>% 
+  unique() %>% 
+  rename(YEAR = year)
+
+old %>% left_join(new)
