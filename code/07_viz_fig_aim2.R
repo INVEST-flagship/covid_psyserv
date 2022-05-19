@@ -30,11 +30,35 @@ df_plot_long <-
     )
   )
 
+# df_plot_long %>% 
+#   select(
+#     ts, 
+#     yearmonday, 
+#     value, 
+#     name, 
+#     negbin_pred_rate_lo,
+#     negbin_pred_rate_hi
+#   ) %>% 
+#   tail()
+
+df_plot_long <- 
+  df_plot_long %>% 
+  mutate(
+    Rate = case_when(
+      name == "rate1000" ~ "Observed",
+      name == "negbin_pred_rate" ~ "Predicted"
+    )
+  )
+
+
 
 plot2ab <-
   df_plot_long %>%
   filter(ts == "02_sex", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
-  ggplot(aes(x = yearmonday, y = value, color = name)) +
+  ggplot(aes(x = yearmonday, 
+             y = value, 
+             # color = Rate
+             )) +
   
   facet_wrap(
     ~ sex_order, 
@@ -43,8 +67,8 @@ plot2ab <-
     ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line(aes(linetype = name)) +
-  scale_linetype_manual(values = c(2, 1)) +
+  geom_line(aes(linetype = Rate)) +
+  scale_linetype_manual(values = c(1, 2)) +
   scale_color_manual(
     values = 
       c(
@@ -52,11 +76,11 @@ plot2ab <-
       "black"
     )
       , 
-    labels = 
-      c(
-      "Predicted rate with 95% CI",
-      "Observed rate"
-    )
+    # labels = 
+    #   c(
+    #   "Predicted rate with 95% CI",
+    #   "Observed rate"
+    # )
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
@@ -72,7 +96,7 @@ plot2ab <-
 plot2cd <-
   df_plot_long %>%
   filter(ts == "03_age", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
-  ggplot(aes(x = yearmonday, y = value, color = name)) +
+  ggplot(aes(x = yearmonday, y = value)) +
   
   facet_wrap(
     ~ lab_age, 
@@ -80,18 +104,18 @@ plot2cd <-
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line(aes(linetype = name)) +
-  scale_linetype_manual(values = c(2, 1)) +
+  geom_line(aes(linetype = Rate)) +
+  scale_linetype_manual(values = c(1, 2)) +
   scale_color_manual(
     values = c(
       "grey50", 
       "black" 
     ), 
-    labels = 
-      c(
-      "Predicted rate with 95% CI",
-      "Observed rate"
-    )
+    # labels = 
+    #   c(
+    #   "Predicted rate with 95% CI",
+    #   "Observed rate"
+    # )
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
@@ -107,24 +131,24 @@ plot2cd <-
 plot2ef <-
   df_plot_long %>%
   filter(ts == "04_area", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
-  ggplot(aes(x = yearmonday, y = value, color = name)) +
+  ggplot(aes(x = yearmonday, y = value)) +
   facet_wrap(
     ~ lab_area, 
     ncol = 2
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line(aes(linetype = name)) +
-  scale_linetype_manual(values = c(2, 1)) +
+  geom_line(aes(linetype = Rate)) +
+  scale_linetype_manual(values = c(1, 2)) +
   scale_color_manual(
     values = c(
       "grey50", 
       "black" 
     ), 
-    labels = c(
-      "Predicted rate with 95% CI", 
-      "Observed rate"
-    )
+    # labels = c(
+    #   "Predicted rate with 95% CI", 
+    #   "Observed rate"
+    # )
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
@@ -133,8 +157,8 @@ plot2ef <-
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
-  theme(legend.position = "none")
-  # theme(legend.position="bottom")
+  # theme(legend.position = "none")
+  theme(legend.position="bottom")
 
 # plot2ef
 
@@ -197,7 +221,7 @@ fig2 <- cowplot::plot_grid(
 plot3 <-
   df_plot_long %>%
   filter(ts == "05_out", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
-  ggplot(aes(x = yearmonday, y = value, color = name)) +
+  ggplot(aes(x = yearmonday, y = value)) +
   
   facet_wrap(
     ~ order_outcome, 
@@ -215,8 +239,8 @@ plot3 <-
   ) +
   
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line(aes(linetype = name)) +
-  scale_linetype_manual(values = c(2, 1)) +
+  geom_line(aes(linetype = Rate)) +
+  scale_linetype_manual(values = c(1, 2)) +
   scale_color_manual(
     values = 
       c(
@@ -224,11 +248,11 @@ plot3 <-
         "black"
       )
     , 
-    labels = 
-      c(
-        "Predicted rate with 95% CI",
-        "Observed rate"
-      )
+    # labels = 
+    #   c(
+    #     "Predicted rate with 95% CI",
+    #     "Observed rate"
+    #   )
   ) +
   labs(
     # y = "Incidence service use\nrate per 1000", 
@@ -237,11 +261,11 @@ plot3 <-
     color = NULL
   ) +
   theme_minimal(base_size = 15) +
-  # theme(
-    # legend.position = c(0.85, 0.025),
-    # legend.position = c(0.95, 0.01),
-    # legend.justification = c(1, 0))
-theme(legend.position = "none")
+  theme(
+  legend.position = c(0.85, 0.025),
+  # legend.position = c(0.95, 0.01),
+  legend.justification = c(1, 0))
+# theme(legend.position = "none")
 
 plot3
 

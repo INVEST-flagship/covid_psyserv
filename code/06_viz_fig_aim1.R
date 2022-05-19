@@ -54,6 +54,15 @@ df_plot_long <-
     )
   )
 
+df_plot_long <- 
+  df_plot_long %>% 
+  mutate(
+    Rate = case_when(
+      name == "rate1000" ~ "Observed",
+      name == "negbin_pred_rate" ~ "Predicted"
+    )
+  )
+
 # df_plot_long %>%
 #   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
 #   select(yearmonday, value, name)
@@ -61,10 +70,10 @@ df_plot_long <-
 plot1b <-
   df_plot_long %>%
   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>%
-  ggplot(aes(x = yearmonday, y = value, color = name)) +
+  ggplot(aes(x = yearmonday, y = value)) +
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
-  geom_line(aes(linetype = name)) +
-  scale_linetype_manual(values = c(2, 1)) +
+  geom_line(aes(linetype = Rate)) +
+  scale_linetype_manual(values = c(1, 2)) +
   scale_y_continuous(limits = c(0, 2.2)) +
 
   scale_color_manual(
@@ -72,10 +81,10 @@ plot1b <-
       "grey50", 
       "black" 
     ), 
-    labels = c(
-      "Predicted rate with 95% CI", 
-      "Observed rate"
-    )
+    # labels = c(
+    #   "Predicted rate with 95% CI", 
+    #   "Observed rate"
+    # )
   ) +
   
   annotate("text",
@@ -96,7 +105,7 @@ plot1b <-
   
   theme_minimal(base_size = 15) +
 
-  theme(legend.position="none") +
+  theme(legend.position="bottom") +
 
   labs(
     # title = "Observed versus Predicted incidence rates",
