@@ -60,6 +60,14 @@ plot2ab <-
              # color = Rate
              )) +
   
+  geom_rect(
+    xmin = "2020-03-15" %>% as.Date, 
+    xmax = "2020-05-15" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
+  
   facet_wrap(
     ~ sex_order, 
     labeller = as_labeller(c('1' = "Males", '2' = "Females")),
@@ -98,6 +106,14 @@ plot2cd <-
   filter(ts == "03_age", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
   
+  geom_rect(
+    xmin = "2020-03-15" %>% as.Date, 
+    xmax = "2020-05-15" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
+  
   facet_wrap(
     ~ lab_age, 
     ncol = 2
@@ -132,6 +148,15 @@ plot2ef <-
   df_plot_long %>%
   filter(ts == "04_area", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
+  
+  geom_rect(
+    xmin = "2020-03-15" %>% as.Date, 
+    xmax = "2020-05-15" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
+  
   facet_wrap(
     ~ lab_area, 
     ncol = 2
@@ -222,6 +247,14 @@ plot3 <-
   df_plot_long %>%
   filter(ts == "05_out", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
+  
+  geom_rect(
+    xmin = "2020-03-15" %>% as.Date, 
+    xmax = "2020-05-15" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
   
   facet_wrap(
     ~ order_outcome, 
