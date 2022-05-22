@@ -71,35 +71,56 @@ plot1b <-
   df_plot_long %>%
   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>%
   ggplot(aes(x = yearmonday, y = value)) +
+  
+  geom_rect(
+    xmin = "2020-03-15" %>% as.Date, 
+    xmax = "2020-05-15" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
+  
   geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey50", fill = "grey50") +
   geom_line(aes(linetype = Rate)) +
   scale_linetype_manual(values = c(1, 2)) +
   scale_y_continuous(limits = c(0, 2.2)) +
 
-  scale_color_manual(
-    values = c(
-      "grey50", 
-      "black" 
-    ), 
+  # scale_color_manual(
+  #   values = c(
+  #     "grey50", 
+  #     "black" 
+  #   ), 
     # labels = c(
     #   "Predicted rate with 95% CI", 
     #   "Observed rate"
     # )
-  ) +
+  # ) +
   
   annotate("text",
-           x = "2020-03-15" %>% as.Date + 5, 
+           x = "2020-03-15" %>% as.Date + 5,
            y = 2,
            hjust = 0,
            label = "March\n2020") +
   
+  # annotate("text",
+  #          x = "2020-03-15" %>% as.Date + 5, 
+  #          y = 2,
+  #          hjust = 0,
+  #          label = "First wave \nMarch-May 2020") +
+  
   geom_vline(xintercept = "2020-03-15" %>% as.Date, linetype = "dotted") +
   
   annotate("text",
-           x = "2021-09-15" %>% as.Date - 5, 
+           x = "2021-09-15" %>% as.Date - 5,
            y = 2,
            hjust = 1,
            label = "September\n2021") +
+  
+  # annotate("text",
+  #          x = "2021-09-15" %>% as.Date - 5, 
+  #          y = 2,
+  #          hjust = 1,
+  #          label = "Following months\nJune 2020-September 2021") +
   
   geom_vline(xintercept = "2021-09-15" %>% as.Date, linetype = "dotted") +
   
@@ -175,6 +196,14 @@ plot1c <-
     )
   ) + 
 
+  geom_rect(
+    xmin = "2020-03-01" %>% as.Date, 
+    xmax = "2020-05-31" %>% as.Date,
+    ymin  = -Inf,
+    ymax = Inf,
+    fill = "grey90"
+  ) +
+  
   scale_y_continuous(limits = c(-40, 40)) +
   
   geom_bar(stat = "identity", color = "grey50", fill = "grey50") + 
@@ -228,7 +257,20 @@ plot1c <-
            hjust = 0,
            label = boxes %>% filter(box_nr == 3) %>% select(label) %>% pull) +
   
- 
+
+  annotate("text",
+           x = "2020-03-01" %>% as.Date + 5, 
+           y = 40,
+           hjust = 0,
+           vjust = 1, 
+           label = "First wave\n(March-\nMay 2020)") +
+  
+  annotate("text",
+           x = "2021-09-30" %>% as.Date - 5, 
+           y = 40,
+           hjust = 1,
+           vjust = 1, 
+           label = "Following months (June 2020-September 2021)") +
   
   labs(
     # title = "Difference between observed versus predicted rates",
