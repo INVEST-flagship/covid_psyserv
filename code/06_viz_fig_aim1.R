@@ -59,7 +59,7 @@ df_plot_long <-
   mutate(
     Rate = case_when(
       name == "rate1000" ~ "Observed",
-      name == "negbin_pred_rate" ~ "Predicted"
+      name == "negbin_pred_rate" ~ "Predicted with 95% CI"
     )
   )
 
@@ -71,7 +71,7 @@ plot1b <-
   df_plot_long %>%
   filter(ts == "01_any", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>%
   ggplot(aes(x = yearmonday, y = value)) +
-  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey70", fill = "grey70") +
+  geom_ribbon(aes(ymin = negbin_pred_rate_lo, ymax = negbin_pred_rate_hi), color = "grey50", fill = "grey50") +
   geom_line(aes(linetype = Rate)) +
   scale_linetype_manual(values = c(1, 2)) +
   scale_y_continuous(limits = c(0, 2.2)) +
