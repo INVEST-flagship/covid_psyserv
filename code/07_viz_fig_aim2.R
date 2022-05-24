@@ -224,16 +224,22 @@ fig2 <- cowplot::plot_grid(
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig2", 
+#     "Fig2",
 #     # "_",
 #     # f_timestamp(),
 #     ".pdf"
 #   ),
-#   h = 6*1.6, w = 6, s = 1.5)
+#   # units = "cm",
+#   # dpi = 600,
+#   # h = as.integer(22.23),
+#   # w = as.integer(22.23/1.6),
+#   # s = 1.2
+#   h = 6*1.6, w = 6, s = 1.5
+#   )
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig2",
+#     "Fig2",
 #     # "_",
 #     # f_timestamp(),
 #     ".png"
@@ -302,17 +308,17 @@ plot3 <-
 
 plot3
 
-ggsave(
-  paste0(
-    "results/",
-    "Fig3",
-    ".eps"
-  ),
-  units = "cm",
-  dpi = 600,
-  h = as.integer(22.23),
-  w = as.integer(22.23/1.6),
-  s = 1.3)
+# ggsave(
+#   paste0(
+#     "results/",
+#     "Fig3",
+#     ".eps"
+#   ),
+#   units = "cm",
+#   dpi = 600,
+#   h = as.integer(22.23),
+#   w = as.integer(22.23/1.6),
+#   s = 1.3)
 
 # sc <- 1.35
 # tiff(
@@ -330,7 +336,7 @@ ggsave(
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig3", 
+#     "Fig3",
 #     # "_",
 #     # f_timestamp(),
 #     ".pdf"
@@ -339,7 +345,7 @@ ggsave(
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig3",
+#     "Fig3",
 #     # "_",
 #     # f_timestamp(),
 #     ".png"

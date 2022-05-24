@@ -342,7 +342,7 @@ fig1 <-
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig1_ab",
+#     "Fig1",
 #     # "_",
 #     # f_timestamp(),
 #     ".pdf"
@@ -351,7 +351,7 @@ fig1 <-
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig1_ab",
+#     "Fig1",
 #     # "_",
 #     # f_timestamp(),
 #     ".png"
