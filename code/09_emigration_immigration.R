@@ -27,7 +27,8 @@ pop_csv <- read_csv(
 
 # Data management ---------------------------------------------------------
 
-im_csv %>% 
+im_em_tab <- 
+  im_csv %>% 
   select(-Area) %>% 
   pivot_longer(
     2:5
@@ -59,6 +60,15 @@ im_csv %>%
     perc_em = tot_em / tot_pop * 100
   )
 
+im_em_tab <- 
+  im_em_tab %>% 
+  rename(
+    Total_immigration = tot_im, 
+    Total_emigration = tot_em, 
+    Total_population = tot_pop, 
+    Percent_immigration = perc_im, 
+    Percent_emigration = perc_em
+  )
 
 
 

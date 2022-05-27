@@ -1,13 +1,14 @@
-Population-based comparisons of new psychiatric diagnoses among children
-and adolescents before and during the COVID-19 pandemic
+Comparison ofnew psychiatric diagnoses among children and adolescents
+before and during the COVID-19 pandemic: A nationwide register-based
+study
 ================
 
 ## Introduction
 
 This document shows how to perform the analyses and vizualize the
-results as described in the manuscript ‘Population-based comparisons of
-new psychiatric diagnoses among children and adolescents before and
-during the COVID-19 pandemic’.
+results as described in the manuscript ‘Comparison of new psychiatric
+diagnoses among children and adolescents before and during the COVID-19
+pandemic: A nationwide register-based study’.
 
 ## Reproducing analyses
 
@@ -75,7 +76,22 @@ To model the associations, run `code/03_model_all_ts.R`.
 To edit tables, run `code/04_viz_table1_descr.R` and
 `code/05_viz_table2.R`.  
 To visualize the associations as figures, run `code/06_viz_fig_aim1.R`
-for Figure 1 and `code/07_viz_fig_aim2.R` for Figure 2.
+for Figure 1 and `code/07_viz_fig_aim2.R` for Figure 2.  
+To plot supplemental figures, run `code/08_covid_patients_hospital.R`
+and `code/10_stratification.R`.  
+To examine immigration and emigration, run
+`code/09_emigration_immigration.R`:
+
+``` r
+im_em_tab %>% kable()
+```
+
+| Year | Total\_immigration | Total\_emigration | Total\_population | Percent\_immigration | Percent\_emigration |
+| ---: | -----------------: | ----------------: | ----------------: | -------------------: | ------------------: |
+| 2017 |               8287 |              2886 |           1186479 |            0.6984532 |           0.2432407 |
+| 2018 |               7361 |              3219 |           1178401 |            0.6246600 |           0.2731668 |
+| 2019 |               7710 |              3173 |           1167707 |            0.6602684 |           0.2717291 |
+| 2020 |               7570 |              2432 |           1159093 |            0.6530969 |           0.2098192 |
 
 ## Versions
 
