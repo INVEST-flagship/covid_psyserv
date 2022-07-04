@@ -1,4 +1,4 @@
-Comparison ofnew psychiatric diagnoses among children and adolescents
+Comparison of new psychiatric diagnoses among children and adolescents
 before and during the COVID-19 pandemic: A nationwide register-based
 study
 ================
@@ -56,10 +56,6 @@ The variables `ts` and `lab_ts` clusters the time series to
 (`04_area`)  
 \- Seven time series of diagnostic groups as outcomes (`04_area`)
 
-``` r
-ts_m %>% select(ts, lab_ts) %>% unique() %>% kable()
-```
-
 | ts       | lab\_ts                    |
 | :------- | :------------------------- |
 | 01\_any  | Any diagnosis              |
@@ -70,21 +66,25 @@ ts_m %>% select(ts, lab_ts) %>% unique() %>% kable()
 
 ## Modelling and visualization
 
-The program for modelling data is found in
-`code/02_model_functions.R`.  
-To model the associations, run `code/03_model_all_ts.R`.  
-To edit tables, run `code/04_viz_table1_descr.R` and
-`code/05_viz_table2.R`.  
-To visualize the associations as figures, run `code/06_viz_fig_aim1.R`
-for Figure 1 and `code/07_viz_fig_aim2.R` for Figure 2.  
-To plot supplemental figures, run `code/08_covid_patients_hospital.R`
-and `code/10_stratification.R`.  
-To examine immigration and emigration, run
-`code/09_emigration_immigration.R`:
+  - The program for modelling data is found in
+    `code/02_model_functions.R`.  
+  - To model the associations, run `code/03_model_all_ts.R`.  
+  - To edit tables, run `code/04_viz_table1_descr.R` and
+    `code/05_viz_table2.R`.  
+  - To visualize the associations as figures, run
+    `code/06_viz_fig_aim1.R` for Figure 1 and `code/07_viz_fig_aim2.R`
+    for Figure 2.  
+  - To plot supplemental figures, run
+    `code/08_covid_patients_hospital.R` and
+    `code/10_stratification.R`.  
+  - To examine immigration and emigration, run
+    `code/09_emigration_immigration.R`
 
-``` r
-im_em_tab %>% kable()
-```
+## Immigration and emigration
+
+The number and percentage of youth immigrating and emigrating per year
+is shown in the table below as described in detail in
+`code/09_emigration_immigration.R`.
 
 | Year | Total\_immigration | Total\_emigration | Total\_population | Percent\_immigration | Percent\_emigration |
 | ---: | -----------------: | ----------------: | ----------------: | -------------------: | ------------------: |
