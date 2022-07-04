@@ -1,5 +1,5 @@
 ---
-title: "Comparison ofnew psychiatric diagnoses among children and adolescents before and during the COVID-19 pandemic: A nationwide register-based study"
+title: "Comparison of new psychiatric diagnoses among children and adolescents before and during the COVID-19 pandemic: A nationwide register-based study"
 output: rmarkdown::github_document
 ---
 
@@ -54,6 +54,9 @@ To visualize the associations as figures, run `code/06_viz_fig_aim1.R` for Figur
 To plot supplemental figures, run `code/08_covid_patients_hospital.R` and `code/10_stratification.R`.  
 To examine immigration and emigration, run `code/09_emigration_immigration.R`:  
 
+## Immigration and emigration
+
+The number and percentage of youth immigrating and emigrating per year is shown in the table below. 
 
 ```{r chunk_03, echo=FALSE, message=FALSE}
 
