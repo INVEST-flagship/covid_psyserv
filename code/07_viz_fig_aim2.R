@@ -60,6 +60,8 @@ plot2ab <-
              # color = Rate
              )) +
   
+  scale_y_continuous(limits = c(0, 2.7)) + # If same y-axis scale for all panels
+  
   geom_rect(
     xmin = "2020-03-15" %>% as.Date, 
     xmax = "2020-05-15" %>% as.Date,
@@ -106,6 +108,8 @@ plot2cd <-
   filter(ts == "03_age", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
   
+  scale_y_continuous(limits = c(0, 2.7)) + # If same y-axis scale for all panels
+  
   geom_rect(
     xmin = "2020-03-15" %>% as.Date, 
     xmax = "2020-05-15" %>% as.Date,
@@ -148,6 +152,8 @@ plot2ef <-
   df_plot_long %>%
   filter(ts == "04_area", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
+  
+  scale_y_continuous(limits = c(0, 2.7)) + # If same y-axis scale for all panels
   
   geom_rect(
     xmin = "2020-03-15" %>% as.Date, 
@@ -195,19 +201,20 @@ fig2 <- cowplot::plot_grid(
   labels = "AUTO"
 )
 
-# fig2
-# 
-# ggsave(
-#   paste0(
-#     "results/",
-#     "Fig2",
-#     ".eps"
-#   ),
-#   units = "cm",
-#   dpi = 600,
-#   h = as.integer(22.23),
-#   w = as.integer(22.23/1.6),
-#   s = 1.2)
+fig2
+
+ggsave(
+  paste0(
+    "results/",
+    "Fig2",
+    # "_same_y-scale",
+    ".eps"
+  ),
+  units = "cm",
+  dpi = 600,
+  h = as.integer(22.23),
+  w = as.integer(22.23/1.6),
+  s = 1.2)
 
 # sc <- 1.35
 # tiff(
@@ -253,6 +260,8 @@ plot3 <-
   df_plot_long %>%
   filter(ts == "05_out", yearmonday >= "2020-03-01", yearmonday <= "2021-10-01") %>% 
   ggplot(aes(x = yearmonday, y = value)) +
+  
+  # scale_y_continuous(limits = c(0, 1.0)) + # If same y-axis scale for all panels
   
   geom_rect(
     xmin = "2020-03-15" %>% as.Date, 
@@ -308,17 +317,18 @@ plot3 <-
 
 plot3
 
-# ggsave(
-#   paste0(
-#     "results/",
-#     "Fig3",
-#     ".eps"
-#   ),
-#   units = "cm",
-#   dpi = 600,
-#   h = as.integer(22.23),
-#   w = as.integer(22.23/1.6),
-#   s = 1.3)
+ggsave(
+  paste0(
+    "results/",
+    "Fig3",
+    # "_same_y-scale",
+    ".eps"
+  ),
+  units = "cm",
+  dpi = 600,
+  h = as.integer(22.23),
+  w = as.integer(22.23/1.6),
+  s = 1.3)
 
 # sc <- 1.35
 # tiff(
