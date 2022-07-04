@@ -86,11 +86,11 @@ plot_s <-
   ) +
   
   labs(
-    title = "Supplemental Figure 1\nWeekly rate of COVID-19 patients treated in hospitals",
+    title = "S2 Figure \nWeekly rate of COVID-19 patients treated in hospitals",
     # subtitle = "Source: Finnish Institute for Health and Welfare",
     caption = "Data source: Finnish Institute for Health and Welfare",    
     # caption = "Data source: Finnish Institute for Health and Welfare\nData management: https://github.com/davgyl/covid_psyserv/blob/main/code/08_covid_patients_hospital.R",
-    y = "Hospital rate for 1,000", 
+    y = "Hospital rate per 1,000", 
     x = "Year and month",
     color = NULL
   ) +
