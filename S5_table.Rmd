@@ -1,0 +1,365 @@
+---
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# S5 Table
+# Observed and predicted number of diagnoses during the COVID-19 pandemic in Finland until September 2021
+  
+```{r chunk_01, echo=FALSE}
+
+source("code//00_pkgs_utils.R")
+
+ts_m_combined <- read_rds("results/ts_m_negbin_combined.rds")
+
+t_m <- 
+  ts_m_combined %>% 
+  arrange(ts, yearmonday, desc(lab_sex), order_outcome) %>% 
+  filter(!is.na(negbin_pred)) %>%
+  mutate(
+    expected_ci = 
+      paste0(
+        negbin_pred %>% round(0), 
+        " (", 
+        negbin_pred_lo %>% round(0), 
+        " \u2013 ", 
+        negbin_pred_hi %>% round(0), 
+        ")"
+      ),
+    diff_abs = 
+      paste0(
+        n - negbin_pred %>% round(0), 
+        " (", 
+        n - negbin_pred_hi %>% round(0), 
+        " \u2013 ", 
+        n - negbin_pred_lo %>% round(0), 
+        ")"
+      ), 
+    diff_rel_perc = 
+      paste0(
+        (((n / negbin_pred) - 1)*100) %>% round(1),
+        " (", 
+        (((n / negbin_pred_hi) - 1)*100) %>% round(1),
+        " \u2013 ", 
+        (((n / negbin_pred_lo) - 1)*100) %>% round(1),
+        ")"
+      )
+  ) %>%
+  mutate(
+    Year = year(yearmonday), 
+    Month = month(yearmonday)
+  ) %>% 
+  select(
+    Year, Month,
+    n, 
+    ts, 
+    contains("lab_"),
+    expected_ci, 
+    diff_abs, 
+    diff_rel_perc
+  ) %>% 
+  rename(
+    Observed = n, 
+    `Predicted No.` = expected_ci,
+    `Absolute difference No.` = diff_abs,
+    `Relative difference %` = diff_rel_perc, 
+    Sex = lab_sex,
+    Age = lab_age, 
+    Area = lab_area, 
+    Outcome = lab_outcome
+  )
+  # rename(
+  #   Observed = n, 
+  #   `Predicted No. (95% CI)` = expected_ci,
+  #   `Absolute difference No. (95% CI)` = diff_abs,
+  #   `Relative difference % (95% CI)` = diff_rel_perc
+  # )
+
+```
+
+```{r chunk_02, echo=FALSE}
+
+t_m %>% 
+  filter(ts == "01_any") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  ) %>% kable (align = "r", caption = "Any diagnosis")
+
+```
+
+\newpage
+
+```{r chunk_03, echo=FALSE}
+
+t_m %>% 
+  filter(ts == "02_sex") %>% 
+  select(
+    Sex,
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+  arrange(
+    desc(Sex), 
+    Year, Month 
+          ) %>% 
+  kable (align = "r", 
+         caption = "Any diagnosis by sex")
+
+```
+
+\newpage
+
+```{r chunk_04, echo=FALSE}
+
+t_m %>% 
+  filter(ts == "03_age") %>% 
+  select(
+    Age,
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Age, 
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Any diagnosis by age group")
+
+```
+
+
+
+\newpage
+
+```{r chunk_05, echo=FALSE}
+
+t_m %>% 
+  filter(ts == "04_area", Area == "Helsinki University Hospital area") %>% 
+  select(
+    # Area,
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      # Area, 
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Any diagnosis in Helsinki University Hospital area")
+
+```
+
+
+\newpage
+
+```{r chunk_06, echo=FALSE}
+
+t_m %>% 
+  filter(ts == "04_area", Area == "Rest of Finland") %>% 
+  select(
+    # Area,
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      # Area, 
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Any diagnosis in rest of Finland")
+
+```
+
+
+\newpage
+
+
+```{r chunk_07, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Substance use disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Substance use disorders")
+
+```
+
+
+\newpage
+
+
+```{r chunk_08, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Psychotic and bipolar disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Psychotic and bipolar disorders")
+
+```
+
+\newpage
+
+
+```{r chunk_09, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Depression and anxiety disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Depression and anxiety disorders")
+
+```
+
+\newpage
+
+
+```{r chunk_10, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Eating disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Eating disorders")
+
+```
+
+\newpage
+
+
+```{r chunk_11, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Neurodevelopmental disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Neurodevelopmental disorders")
+
+```
+
+\newpage
+
+
+```{r chunk_12, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Conduct and oppositional disorders") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Conduct and oppositional disorders")
+
+```
+
+\newpage
+
+
+```{r chunk_13, echo=FALSE}
+
+t_m %>% 
+  filter(
+    ts == "05_out",
+    Outcome == "Self-harm") %>% 
+  select(
+    Year, 
+    Month, 
+    Observed, 
+    `Predicted No.`, 
+    `Absolute difference No.`,
+    `Relative difference %`
+  )  %>% 
+    arrange(
+      Year, Month) %>% 
+  kable (align = "r", 
+         caption = "Self-harm")
+
+```
