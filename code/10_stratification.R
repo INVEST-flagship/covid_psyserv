@@ -138,7 +138,7 @@ plot_sex <-
     
   ) +
   labs(
-    title = "Supplemental Figure 2\nSex-stratifed results for selected outcomes",
+    title = "S5 Figure\nSex-stratifed results for selected outcomes",
     y = "Diagnosis rate per 1,000", 
     x = "Year and month",
     color = NULL
@@ -151,7 +151,7 @@ plot_sex
 # ggsave(
 #   paste0(
 #     "results/",
-#     "fig_suppl_sex",
+#     "S5_Figure",
 #     # "_",
 #     # f_timestamp(),
 #     ".pdf"
