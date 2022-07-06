@@ -3,6 +3,8 @@ before and during the COVID-19 pandemic: A nationwide register-based
 study
 ================
 
+[![DOI](https://zenodo.org/badge/511254713.svg)](https://zenodo.org/badge/latestdoi/511254713)
+
 ## Introduction
 
 This document shows how to perform the analyses and vizualize the
